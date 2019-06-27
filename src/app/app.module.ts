@@ -4,8 +4,21 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NbThemeModule, NbLayoutModule, NbButtonModule, NbSidebarModule} from '@nebular/theme';
-import {NbEvaIconsModule} from '@nebular/eva-icons';
+import {
+  NbChatModule,
+  NbOverlayModule,
+  NbCdkMappingModule,
+  NbA11yModule,
+  NbCdkAdapterModule,
+  NbDialogModule,
+  NbToastrModule,
+  NbWindowModule,
+  NbDatepickerModule,
+  NbThemeModule,
+  NbSidebarModule,
+  NbMenuModule,
+} from '@nebular/theme';
+
 import {NotFoundComponent} from './pages/miscellaneous/not-found/not-found.component';
 
 @NgModule({
@@ -16,9 +29,16 @@ import {NotFoundComponent} from './pages/miscellaneous/not-found/not-found.compo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbLayoutModule,
-    NbEvaIconsModule,
-    NbButtonModule,
+    NbChatModule.forRoot(),
+    NbOverlayModule.forRoot(),
+    NbCdkMappingModule.forRoot(),
+    NbA11yModule.forRoot(),
+    NbCdkAdapterModule.forRoot(),
+    NbDialogModule.forRoot(),
+    NbToastrModule.forRoot(),
+    NbWindowModule.forRoot(),
+    NbDatepickerModule.forRoot(),
+    NbMenuModule.forRoot(),
     NbSidebarModule.forRoot(),
     NbThemeModule.forRoot({name: 'dark'})
   ],
