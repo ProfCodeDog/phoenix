@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NbThemeModule, NbLayoutModule, NbButtonModule, NbSidebarModule} from '@nebular/theme';
 import {NbEvaIconsModule} from '@nebular/eva-icons';
-import {NotFoundComponent} from "./pages/miscellaneous/not-found/not-found.component";
+import {NotFoundComponent} from './pages/miscellaneous/not-found/not-found.component';
 
 @NgModule({
   declarations: [
