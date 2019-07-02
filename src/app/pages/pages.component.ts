@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {MENU_ITEMS} from './pages-menu';
 
 
 @Component({
@@ -8,6 +9,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
+  menu = MENU_ITEMS;
 
   constructor() {
   }

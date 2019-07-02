@@ -32,15 +32,28 @@ https://akveo.github.io/nebular/docs/guides/install-nebular#manually
 
 ng new phoenix
 ng add @nebular/theme
-npm install --save @nebular/theme @angular/cdk @angular/animations
+npm install --save @nebular/theme 
+npm install --save @angular/cdk 
+npm install --save @angular/animations
 npm install --save @nebular/eva-icons@next
+npm install --save @nebular/bootstrap
+npm install --save @ng-bootstrap/ng-bootstrap
+
 
 
 
 ng g m auth
 ng g m pages
 
+ng g m @core
+ng g m @theme
+
 ng g c auth --m auth
-ng g c pages --m pages
+ng g c pages --m pages 
+
+ng g c pages/e-commerce  --m pages 
 
 ng g c pages/miscellaneous/not-found
+
+
+ng g c @theme/components/header
