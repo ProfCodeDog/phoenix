@@ -30,8 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://akveo.github.io/nebular/docs/guides/install-nebular#manually
 
+
 ng new phoenix
 ng add @nebular/theme
+
 npm install --save @nebular/theme 
 npm install --save @angular/cdk 
 npm install --save @angular/animations
@@ -40,16 +42,44 @@ npm install --save @nebular/bootstrap
 npm install --save @ng-bootstrap/ng-bootstrap
 
 
+npm install bootstrap
+npm install protractor
+npm install typeface-exo
+npm install roboto-fontface
+npm install ionicons
+npm install @fortawesome/fontawesome-free
+npm install socicon
+npm install nebular-icons
+npm install angular-tree-component
+npm install leaflet
+
+
+npm install pace-js
+npm install tinymce
+npm install echarts
+npm install chart.js
+     
+
 
 
 ng g m auth
 ng g m pages
+ng g m pages/e-commerce 
 
 ng g m @core
 ng g m @theme
 
+
+ng g s @core/utils/state
+ng g s @core/utils/analytics
+ng g s @core/utils/layout
+
+ng g s @theme/services/window-mode-block-scroll
+
+
 ng g c auth --m auth
 ng g c pages --m pages 
+
 
 ng g c pages/e-commerce  --m pages 
 
@@ -57,3 +87,10 @@ ng g c pages/miscellaneous/not-found
 
 
 ng g c @theme/components/header
+ng g c @theme/components/footer
+
+
+
+ng g c @theme/layouts/one-column
+ng g c @theme/layouts/two-column
+ng g c @theme/layouts/three-column

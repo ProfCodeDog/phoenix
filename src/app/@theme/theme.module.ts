@@ -10,6 +10,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {DEFAULT_THEME} from './styles/theme.default';
 import {COSMIC_THEME} from './styles/theme.cosmic';
 import {CORPORATE_THEME} from './styles/theme.corporate';
+import {DARK_THEME} from './styles/theme.dark';
 
 import {
   CapitalizePipe,
@@ -20,7 +21,6 @@ import {
   EvaIconsPipe,
 } from './pipes';
 
-import {HeaderComponent} from './components/header/header.component';
 
 import {
   FormsModule,
@@ -41,7 +41,9 @@ import {
   NbCalendarKitModule,
   NbCalendarModule,
   NbCalendarRangeModule,
-  NbCardModule, NbCdkAdapterModule, NbCdkMappingModule,
+  NbCardModule,
+  NbCdkAdapterModule,
+  NbCdkMappingModule,
   NbChatModule,
   NbCheckboxModule,
   NbContextMenuModule,
@@ -51,7 +53,8 @@ import {
   NbInputModule,
   NbLayoutModule,
   NbListModule,
-  NbMenuModule, NbOverlayModule,
+  NbMenuModule,
+  NbOverlayModule,
   NbPlatformModule,
   NbPopoverModule,
   NbProgressBarModule,
@@ -71,6 +74,11 @@ import {
   NbUserModule,
   NbWindowModule
 } from '@nebular/theme';
+
+
+import {HeaderComponent} from './components/header/header.component';
+import {OneColumnComponent} from './components/layouts/one-column/one-column.component';
+import {WindowModeBlockScrollService} from './services/window-mode-block-scroll.service';
 
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
@@ -105,7 +113,7 @@ const NB_MODULES = [
   NbRadioModule,
   NbRouteTabsetModule,
   NbSearchModule,
-  NbSecurityModule, // *nbIsGranted directive,
+  NbSecurityModule,
   NbSelectModule,
   NbSidebarModule,
   NbSpinnerModule,
@@ -121,7 +129,8 @@ const NB_MODULES = [
 ];
 
 const COMPONENTS = [
-  HeaderComponent
+  HeaderComponent,
+  OneColumnComponent
 ];
 
 const ENTRY_COMPONENTS = [];
@@ -140,7 +149,7 @@ const NB_THEME_PROVIDERS = [
     {
       name: 'dark',
     },
-    [DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME],
+    [DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME, DARK_THEME],
   ).providers,
   ...NbA11yModule.forRoot().providers,
   ...NbCdkAdapterModule.forRoot().providers,
@@ -161,14 +170,19 @@ const NB_THEME_PROVIDERS = [
 @NgModule({
   declarations: [...COMPONENTS, ...PIPES],
   imports: [...BASE_MODULES, ...NB_MODULES],
-  exports: [...BASE_MODULES, ...NB_MODULES, ...COMPONENTS, ...PIPES],
+  exports: [
+    ...BASE_MODULES,
+    ...NB_MODULES,
+    ...COMPONENTS,
+    ...PIPES],
   entryComponents: [...ENTRY_COMPONENTS]
 })
 export class ThemeModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: ThemeModule,
-      providers: [...NB_THEME_PROVIDERS],
+      providers: [...NB_THEME_PROVIDERS,
+        WindowModeBlockScrollService],
     } as ModuleWithProviders;
   }
 }

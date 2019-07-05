@@ -1,15 +1,4 @@
-<nb-layout>
-  <nb-layout-header>
-  </nb-layout-header>
-  <nb-layout-header subheader>
-    <nb-actions>
-      <nb-action icon="home-outline"></nb-action>
-      <nb-action icon="search-outline"></nb-action>
-      <nb-action icon="edit-outline"></nb-action>
-    </nb-actions>
-  </nb-layout-header>
-  <nb-sidebar></nb-sidebar>
-  <nb-layout-column></nb-layout-column>
-  <nb-layout-footer></nb-layout-footer>
-</nb-layout>
-
+<app-one-column>
+  <nb-menu [items]="menu"></nb-menu>
+  <router-outlet></router-outlet>
+</app-one-column>
