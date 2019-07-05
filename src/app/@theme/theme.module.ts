@@ -79,6 +79,7 @@ import {
 import {HeaderComponent} from './components/header/header.component';
 import {OneColumnComponent} from './components/layouts/one-column/one-column.component';
 import {WindowModeBlockScrollService} from './services/window-mode-block-scroll.service';
+import {FooterComponent} from './components/footer/footer.component';
 
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
@@ -130,7 +131,8 @@ const NB_MODULES = [
 
 const COMPONENTS = [
   HeaderComponent,
-  OneColumnComponent
+  OneColumnComponent,
+  FooterComponent
 ];
 
 const ENTRY_COMPONENTS = [];

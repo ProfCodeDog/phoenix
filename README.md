@@ -52,6 +52,7 @@ npm install socicon
 npm install nebular-icons
 npm install angular-tree-component
 npm install leaflet
+npm install font-awesome
 
 
 npm install pace-js
