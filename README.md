@@ -59,7 +59,10 @@ npm install pace-js
 npm install tinymce
 npm install echarts
 npm install chart.js
-     
+npm install ngx-echarts
+npm install angular2-chartjs
+npm install @swimlane/ngx-charts
+npm install @asymmetrik/ngx-leaflet
 
 
 
@@ -77,12 +80,15 @@ ng g s @core/utils/layout
 
 ng g s @theme/services/window-mode-block-scroll
 
+ng g s pages/e-commerce/country-orders/map/country-orders-map
+
 
 ng g c auth --m auth
 ng g c pages --m pages 
 
+ng g c pages/e-commerce 
+ng g c pages/e-commerce/profit-card
 
-ng g c pages/e-commerce  --m pages 
 
 ng g c pages/miscellaneous/not-found
 
