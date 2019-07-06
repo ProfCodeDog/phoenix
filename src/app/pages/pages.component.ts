@@ -8,5 +8,5 @@ import {MENU_ITEMS} from './pages-menu';
   styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent {
-  menu = MENU_ITEMS;
+  menuItems = MENU_ITEMS;
 }
