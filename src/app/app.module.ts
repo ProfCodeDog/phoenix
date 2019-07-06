@@ -8,9 +8,6 @@ import {CoreModule} from './@core/core.module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
-
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 import {NotFoundComponent} from './pages/miscellaneous/not-found/not-found.component';
 
 
@@ -23,7 +20,6 @@ import {NotFoundComponent} from './pages/miscellaneous/not-found/not-found.compo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule,
     ThemeModule.forRoot(),
     CoreModule.forRoot()
   ],

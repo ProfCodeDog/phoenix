@@ -27,8 +27,6 @@ import {
   ReactiveFormsModule
 } from '@angular/forms';
 
-import {NbEvaIconsModule} from '@nebular/eva-icons';
-
 import {
   NbA11yModule,
   NbAccordionModule,
@@ -75,6 +73,7 @@ import {
   NbWindowModule
 } from '@nebular/theme';
 
+import {NbEvaIconsModule} from '@nebular/eva-icons';
 
 import {HeaderComponent} from './components/header/header.component';
 import {OneColumnComponent} from './components/layouts/one-column/one-column.component';
@@ -102,8 +101,8 @@ const NB_MODULES = [
   NbContextMenuModule,
   NbDatepickerModule,
   NbDialogModule,
-  NbEvaIconsModule,
   NbIconModule,
+  NbEvaIconsModule,
   NbInputModule,
   NbLayoutModule,
   NbListModule,

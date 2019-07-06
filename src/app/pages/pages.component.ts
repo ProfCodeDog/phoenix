@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {MENU_ITEMS} from './pages-menu';
 
 
@@ -7,14 +7,6 @@ import {MENU_ITEMS} from './pages-menu';
   templateUrl: './pages.component.html',
   styleUrls: ['./pages.component.scss']
 })
-export class PagesComponent implements OnInit {
-
+export class PagesComponent {
   menu = MENU_ITEMS;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
 }

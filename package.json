@@ -23,7 +23,7 @@
     "@fortawesome/fontawesome-free": "^5.9.0",
     "@nebular/auth": "^4.1.0",
     "@nebular/bootstrap": "^4.1.0",
-    "@nebular/eva-icons": "^4.0.0-rc.8",
+    "@nebular/eva-icons": "^4.1.0",
     "@nebular/security": "^4.1.0",
     "@nebular/theme": "^4.1.0",
     "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.1",
