@@ -57,9 +57,9 @@ npm install font-awesome
 
 npm install pace-js
 npm install tinymce
-npm install echarts
+npm install echarts --save
 npm install chart.js
-npm install ngx-echarts
+npm install ngx-echarts --save
 npm install angular2-chartjs
 npm install @swimlane/ngx-charts
 npm install @asymmetrik/ngx-leaflet
@@ -88,7 +88,10 @@ ng g c pages --m pages
 
 ng g c pages/e-commerce 
 ng g c pages/e-commerce/profit-card
-
+ng g c pages/e-commerce/profit-card/front-side/stats-card-front
+ng g c pages/e-commerce/profit-card/front-side/stats-bar-animation-chart
+ng g c pages/e-commerce/profit-card/back-side/stats-area-chart
+ng g c pages/e-commerce/profit-card/back-side/stats-card-back
 
 ng g c pages/miscellaneous/not-found
 

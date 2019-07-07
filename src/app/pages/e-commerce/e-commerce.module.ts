@@ -20,10 +20,18 @@ import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 
 import {CountryOrdersMapService} from './country-orders/map/country-orders-map.service';
 import {ProfitCardComponent} from './profit-card/profit-card.component';
+import {StatsCardFrontComponent} from './profit-card/front-side/stats-card-front/stats-card-front.component';
+import {StatsBarAnimationChartComponent} from './profit-card/front-side/stats-bar-animation-chart/stats-bar-animation-chart.component';
+import {StatsAreaChartComponent} from './profit-card/back-side/stats-area-chart/stats-area-chart.component';
+import {StatsCardBackComponent} from './profit-card/back-side/stats-card-back/stats-card-back.component';
 
 
 const COMPONENTS = [
-  ProfitCardComponent
+  ProfitCardComponent,
+  StatsCardFrontComponent,
+  StatsBarAnimationChartComponent,
+  StatsCardBackComponent,
+  StatsAreaChartComponent,
 ];
 
 const NB_MODULES = [
